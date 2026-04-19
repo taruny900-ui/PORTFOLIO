@@ -1,0 +1,135 @@
+/* --- Global Settings --- */
+body {
+    background-color: #1a1a1a; /* Thoda darker grey for pro look */
+    color: #ffffff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+/* --- Header Layout --- */
+header {
+    background-color: #1f1f1f;
+    padding: 15px 40px;
+    border-bottom: 1px solid #333;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between; /* Logo left, Links right */
+    align-items: center; /* Vertical alignment center */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px; /* Links ke beech ka space */
+    margin: 0;
+}
+
+.nav-links a {
+    color: #ccc;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #fff;
+}
+.nav-links a:hover { color: #fff; }
+
+/* --- Hero Wrapper (Side by Side Fix) --- */
+.hero-wrapper {
+    display: flex;
+    padding: 40px;
+    gap: 20px;
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+.hero-wrapper .window-card {
+    flex: 1; /* Dono card barabar jagah lenge */
+    display: flex;
+    flex-direction: column;
+}
+
+/* --- Window Card Styling --- */
+.window-card {
+    background-color: #1e1e1e;
+    border: 1px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.window-header {
+    background-color: #151515;
+    padding: 10px 15px;
+    font-size: 12px;
+    color: #888;
+    border-bottom: 1px solid #333;
+    display: flex;
+    align-items: center;
+}
+
+/* Terminal Dots */
+.dot { width: 10px; height: 10px; border-radius: 50%; margin-right: 6px; }
+.red { background-color: #ff5f56; }
+.yellow { background-color: #ffbd2e; }
+.green { background-color: #27c93f; }
+
+.window-content { padding: 30px; }
+
+.window-content h1 { font-size: 2.2rem; margin: 10px 0; }
+.window-content h2 { font-size: 1rem; color: #aaa; font-weight: 400; }
+
+/* Visual Box for GIF */
+.visual-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #111;
+    height: 100%;
+    padding: 0;
+}
+
+.hero-gif {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+/* --- Buttons --- */
+.action-buttons { display: flex; gap: 10px; margin-top: 20px; flex-wrap: wrap; }
+.btn {
+    background-color: #2a2a2a;
+    color: white;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 4px;
+    border: 1px solid #444;
+    font-size: 13px;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.btn-highlight { background-color: #8bb0d3; color: #111; border: none; }
+.btn:hover { background-color: #444; transform: translateY(-2px); }
+.btn:active { transform: scale(0.95); }
+
+/* --- Grid for Other Sections --- */
+.grid-container {
+    padding: 0 40px 40px;
+    max-width: 1300px;
+    margin: 0 auto;
+    display: flex;
+    gap: 20px;
+}
+
+/* Responsiveness */
+@media (max-width: 850px) {
+    .hero-wrapper { flex-direction: column; }
+}
