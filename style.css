@@ -133,3 +133,85 @@ nav {
 @media (max-width: 850px) {
     .hero-wrapper { flex-direction: column; }
 }
+/* --- Profile Image Styling --- */
+.profile-img {
+    display: block;
+    margin: 0 auto;       /* Centers the image */
+    width: 250px;         /* Set a fixed width to make it smaller */
+    height: 250px;        /* Set the same height for a square look */
+    object-fit: cover;    /* Ensures the face doesn't stretch */
+    border-radius: 12px;  /* Optional: rounded corners to match your theme */
+    border: 2px solid #333; /* Adds a subtle border */
+}
+
+/* Adjusting the card padding for a better look */
+#about .window-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Ensures content inside the photo card is centered */
+    padding: 40px;       /* Adds more "breathing room" around the photo */
+}
+/* Target the specific content area for the Contact section */
+#contact .window-content {
+    padding: 60px 40px; /* More vertical padding (60px) for a premium feel */
+    text-align: center; /* Centers the text and heading */
+}
+  #projects .window-content {
+    padding: 40px; /* Consistent padding for projects section */
+
+
+
+#contact p {
+    margin-bottom: 30px; /* Space between text and buttons */
+    color: #aaa;
+}
+
+/* The Button Container */
+.contact-buttons {
+    display: flex;
+    justify-content: center; /* Centers buttons horizontally */
+    gap: 15px;              /* Equal space between each button */
+    flex-wrap: wrap;        /* Prevents breaking on small screens */
+}
+
+/* Optional: Make the buttons slightly larger for the contact section */
+.contact-buttons .btn {
+    padding: 12px 24px;
+    min-width: 120px;       /* Keeps buttons consistent in size */
+}
+/* Add/Update this in your CSS */
+footer {
+    background-color: #151515; /* Matches your window headers */
+    color: #888;
+    text-align: center;
+    padding: 30px 20px;
+    border-top: 1px solid #333;
+    font-size: 14px;
+}.btn {
+    background-color: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 6px; /* Slightly rounder feels more modern */
+    border: 1px solid #555;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #333;
+    border-color: #888;
+}
+
+/* Create a specific class for the most important button (e.g., View Code / Download CV) */
+.btn-primary {
+    background-color: #e0e0e0;
+    color: #111;
+    border: none;
+}
+
+.btn-primary:hover {
+    background-color: #fff;
+    transform: translateY(-2px);
+}

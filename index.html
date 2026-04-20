@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tarun Yadav | Portfolio</title>
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;500;700&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -15,7 +16,7 @@
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
                 <li><a href="#projects">Projects</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="#contact">Contact</a></li>
             
             </ul>
         </nav>
@@ -67,26 +68,57 @@
                 <p>While I specialize in Artificial Intelligence and Machine Learning, I have a strong passion for Full-Stack Web Development.</p>
             </div>
         </div>
-    </main>
-
-    <main id="projects" class="grid-container" style="flex-wrap: wrap;">
-        <div class="window-card" style="width: 45%; min-width: 300px;">
-            <div class="window-header"><span>PROJECT 01</span></div>
-            <div class="window-content">
-                <h2>Web App</h2>
-                <h1>Swiggy Clone</h1>
-                <a href="#" class="btn" style="margin-top: 15px;">VIEW CODE</a>
+        <div class="window-card" style="width: 100%;">
+            <div class="window-header">
+                <span>Profile Picture</span>
             </div>
-        </div>
-
-        <div class="window-card" style="width: 45%; min-width: 300px;">
-            <div class="window-header"><span>PROJECT 02</span></div>
             <div class="window-content">
-                <h2>JavaScript Game</h2>
-                <h1>Rock Paper Scissors</h1>
-                <a href="#" class="btn" style="margin-top: 15px;">PLAY GAME</a>
+                <img src="profile.jpeg" alt="Profile Picture" class="profile-img">
             </div>
         </div>
     </main>
+
+   <main id="projects" class="grid-container">
+    <div class="window-card" style="width: 100%;">
+        <div class="window-header"><span>PROJECT 01</span></div>
+        <div class="window-content">
+            <h2>Web App</h2>
+            <h1>Swiggy Clone</h1>
+            <a href="#" class="btn" style="margin-top: 15px;">VIEW CODE</a>
+        </div>
+    </div>
+
+    <div class="window-card" style="width: 100%;">
+        <div class="window-header"><span>PROJECT 02</span></div>
+        <div class="window-content">
+            <h2>JavaScript Game</h2>
+            <h1>Rock Paper Scissors</h1>
+            <a href="#" id="play-button" class="btn" style="margin-top: 15px;">PLAY GAME</a>
+        </div>
+    </div>
+</main>
+        </div>
+    </main>
+      <main id = "contact" class="grid-container" style="flex-wrap: wrap;">
+        <div class="window-card" style="width: 100%;">
+            <div class="window-header"><span>CONTACT</span></div>
+            <div class="window-content">
+                <h1>Get In Touch</h1>
+                <p>Feel free to reach out if you have any questions or just want to connect!</p>
+                <a href="mailto:taruny900@gmail.com" class="btn">SEND EMAIL</a>
+                <a href="https://linkedin.com/in/tarun-yadav-07205b328" target="_blank" class="btn">LINKEDIN</a>
+                <a href="tel:+917452034425" class="btn">CALL ME</a>
+                <a href = "https://www.instagram.com/tarun2812_?utm_source=qr&igsh=Ymd5bHM3Z3RoemQw" target="_blank" class="btn">INSTAGRAM</a>
+
+            </div>
+        </div>
+      </main>
+      <footer>
+        <div class="footer-content" style="text-align: center; padding: 20px; ">
+            <p>&copy; 2026 Tarun Yadav. All rights reserved.</p>
+        </div>
+      </footer>
+      <script src="script.js"></script>
+
 </body>
 </html>
